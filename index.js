@@ -4,12 +4,13 @@ let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
 
-document.querySelector("score").textContent = score;
+document.querySelector(".score").textContent = score;
 
-fetch("./data/cards.json");
 fetch("./data/cards.json")
   .then((res) => res.json())
-  .catch((data) => {
+  
+  .then((data) => {
+    cards=[...data,...data];
     shuffleCards();
     generateCards();
   });
@@ -32,7 +33,8 @@ function generateCards() {
   for (let card of cards) {
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
-    cardElement.setAttribute("data-name".card.name);
+    cardElement.setAttribute("data-name", card.name);
+
     cardElement.innerHTML = `<div class="front">
             <img class="front-img" src=${card.image} />
         </div>
