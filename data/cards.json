@@ -1,0 +1,29 @@
+[
+    {"image":"../asset/chili.png",
+     "name": "chilli"},
+     
+     {"image":"../asset/grapes.png",
+     "name": "grapes"},
+
+     {"image":"../asset/lemon.png",
+     "name": "lemon"},
+
+     {"image":"../asset/orange.png",
+     "name": "orange"},
+
+     {"image":"../asset/pineapple.png",
+     "name": "pinapple"},
+
+     {"image":"../asset/strawberry.png",
+     "name": "strawberry"},
+
+     {"image":"../asset/tomato.png",
+     "name": "tomato"},
+
+     {"image":"../asset/watermelon.png",
+     "name": "watermelon"},
+     
+     {"image":"../asset/cherries.png",
+     "name": "cherry"}
+     
+]
